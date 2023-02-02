@@ -1,11 +1,17 @@
 import './App.css';
-import StartshipList from './StarshipList/StartshipList';
+import { Routes, Route } from 'react-router-dom';
+import StarshipList from './StarshipList/StarshipList';
 
 function App() {
   return (
-    <div>
-      <StartshipList />
-    </div>
+    <>
+      <Routes>
+        <Route
+          path='/'
+          element={<StarshipList />}
+        />
+      </Routes>
+    </>
   );
 }
 
