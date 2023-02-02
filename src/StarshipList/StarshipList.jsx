@@ -9,7 +9,6 @@ function StarshipList() {
     const fetchStarshipList = async () => {
       const starshipData = await getAllStarships()
       setStarships(starshipData.results)
-      console.log(starshipData.results)
     }
     fetchStarshipList()
   }, [])
